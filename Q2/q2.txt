@@ -1,0 +1,24 @@
+Errors:
+
+1) JavaScript is a case-sensitive language so there should be if keyword. It will not recognize the If keyword and If keyword will give error.(syntax error)
+2) The last function in runFizzBuzz()  function should be  if (i == 100) alert("FizzBuzz done"); not if (i = 100) alert("FizzBuzz done")
+
+
+Good Practice :
+
+1) JavaScript code should be external for maintenance and performance.
+
+
+Improvements :
+
+1) In runFizzBuzz()
+    Current :
+        for (i = 0; i < 101; i++) {
+		        if (!i) continue;
+		        // Code
+		}
+
+    Improvement :
+        for(i=1; i< 101; i+=){
+            // if (!i) continue;   //We don't need this condition as we know that we skip the 0 value. So why we can't start from 1 instead of 0
+        }
